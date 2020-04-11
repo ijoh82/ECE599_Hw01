@@ -7,5 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/ijoh82/ECE599/Hw_01_4/joh_ws/build"
-export PYTHONPATH="/home/ijoh82/ECE599/Hw_01_4/joh_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export PWD="/home/ijoh82/ECE599/Hw01/Prob04/joh_ws/build"

@@ -1,2 +1,2 @@
 joh_runtime_monitoring
--DCATKIN_DEVEL_PREFIX=/home/ijoh82/ECE599/Hw_01_4/joh_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ijoh82/ECE599/Hw_01_4/joh_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/ijoh82/ECE599/Hw01/Prob04/joh_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ijoh82/ECE599/Hw01/Prob04/joh_ws/install -G Unix Makefiles

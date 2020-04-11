@@ -67,14 +67,14 @@ set(joh_runtime_monitoring_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(joh_runtime_monitoring_SOURCE_PREFIX /home/ijoh82/ECE599/Hw_01_4/joh_ws/src/joh_runtime_monitoring)
-  set(joh_runtime_monitoring_DEVEL_PREFIX /home/ijoh82/ECE599/Hw_01_4/joh_ws/devel)
+  set(joh_runtime_monitoring_SOURCE_PREFIX /home/ijoh82/ECE599/Hw01/Prob04/joh_ws/src/joh_runtime_monitoring)
+  set(joh_runtime_monitoring_DEVEL_PREFIX /home/ijoh82/ECE599/Hw01/Prob04/joh_ws/devel)
   set(joh_runtime_monitoring_INSTALL_PREFIX "")
   set(joh_runtime_monitoring_PREFIX ${joh_runtime_monitoring_DEVEL_PREFIX})
 else()
   set(joh_runtime_monitoring_SOURCE_PREFIX "")
   set(joh_runtime_monitoring_DEVEL_PREFIX "")
-  set(joh_runtime_monitoring_INSTALL_PREFIX /home/ijoh82/ECE599/Hw_01_4/joh_ws/install)
+  set(joh_runtime_monitoring_INSTALL_PREFIX /home/ijoh82/ECE599/Hw01/Prob04/joh_ws/install)
   set(joh_runtime_monitoring_PREFIX ${joh_runtime_monitoring_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(joh_runtime_monitoring_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "include " STREQUAL " ")
+if(NOT " " STREQUAL " ")
   set(joh_runtime_monitoring_INCLUDE_DIRS "")
-  set(_include_dirs "include")
+  set(_include_dirs "")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ijoh82/ECE599/Hw_01_4/joh_ws/install/lib;/home/ijoh82/ECE599/Hw_01_4/joh_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/ijoh82/ECE599/Hw01/Prob04/joh_ws/install/lib;/home/ijoh82/ECE599/Hw01/Prob04/joh_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(joh_runtime_monitoring_EXPORTED_TARGETS "joh_runtime_monitoring_generate_messages_cpp;joh_runtime_monitoring_generate_messages_eus;joh_runtime_monitoring_generate_messages_lisp;joh_runtime_monitoring_generate_messages_nodejs;joh_runtime_monitoring_generate_messages_py")
+set(joh_runtime_monitoring_EXPORTED_TARGETS "")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${joh_runtime_monitoring_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND joh_runtime_monitoring_EXPORTED_TARGETS ${${joh_runtime_monitoring_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "joh_runtime_monitoring-msg-extras.cmake")
+set(pkg_cfg_extras "")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${joh_runtime_monitoring_DIR}/${extra})

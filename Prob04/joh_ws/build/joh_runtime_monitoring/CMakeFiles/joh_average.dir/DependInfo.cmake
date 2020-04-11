@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ijoh82/ECE599/Hw_01_4/joh_ws/src/joh_runtime_monitoring/src/joh_average.cpp" "/home/ijoh82/ECE599/Hw_01_4/joh_ws/build/joh_runtime_monitoring/CMakeFiles/joh_average.dir/src/joh_average.cpp.o"
+  "/home/ijoh82/ECE599/Hw01/Prob04/joh_ws/src/joh_runtime_monitoring/src/joh_average.cpp" "/home/ijoh82/ECE599/Hw01/Prob04/joh_ws/build/joh_runtime_monitoring/CMakeFiles/joh_average.dir/src/joh_average.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ijoh82/ECE599/Hw_01_4/joh_ws/devel/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

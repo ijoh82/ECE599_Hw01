@@ -1,8 +1,8 @@
-prefix=/home/ijoh82/ECE599/Hw_01_4/joh_ws/devel
+prefix=/home/ijoh82/ECE599/Hw01/Prob04/joh_ws/devel
 
 Name: joh_runtime_monitoring
 Description: Description of joh_runtime_monitoring
 Version: 0.0.0
-Cflags: -I/home/ijoh82/ECE599/Hw_01_4/joh_ws/devel/include
+Cflags: 
 Libs: -L${prefix}/lib 
 Requires: 
